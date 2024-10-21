@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aire Inhalado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Aire Inhalado</h1>
+        <p>¡Tu aplicación para registrar la cantidad de aire que inhalas cada día!</p>
+    </header>
+
+    <main>
+        <section class="instructions">
+            <h2>¿Cómo Funciona?</h2>
+            <p>Presiona el botón cada vez que quieras registrar una inhalación. El contador mostrará la cantidad total de aire "inhalado" en litros.</p>
+        </section>
+
+        <section class="app">
+            <button id="inhale-btn">Inhalar Aire</button>
+            <p id="counter">Litros de aire inhalado: 0</p>
+        </section>
+
+        <section class="stats">
+            <h2>Estadísticas</h2>
+            <p>Historial de aire inhalado:</p>
+            <ul id="history">
+                <!-- Aquí se mostrarán las entradas del historial -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Registro de Aire Inhalado. Todos los derechos reservados.</p>
+    </footer>
+
+    <audio id="inhalation-sound" src="inhalacion.mp3"></audio> <!-- Añadido aquí -->
+
+    <script src="script.js"></script>
+</body>
+</html>
